@@ -898,7 +898,7 @@
       "settings": {
         "meta_descr": "Web Generator Description",
         "title": "Acerca de nosotros",
-        "order": 24
+        "order": 13
       },
       "components": [
         {
@@ -1468,7 +1468,7 @@
       "settings": {
         "meta_descr": "Website Generator Description",
         "title": "Moviles Basicos",
-        "order": 3
+        "order": 2
       },
       "components": [
         {
@@ -1986,11 +1986,12 @@
               }
             },
             ".mbr-section-subtitle": {
-              "color": "#3435c3"
+              "color": "#3435c3",
+              "text-align": "center"
             }
           },
           "_name": "services1",
-          "_customHTML": "<section class=\"services1\" group=\"Features\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\">\n    <!---->\n    <mbr-parameters>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"9\" step=\"1\" value=\"0\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"9\" step=\"1\" value=\"6\">\n        <!---->\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Subtitle\" name=\"showSubtitle\" checked>\n        <!---->\n        <input type=\"checkbox\" title=\"Show Card Title\" name=\"showCardTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Card Text\" name=\"showText\" checked>\n        <input type=\"checkbox\" title=\"Show Card Buttons\" name=\"showButtons\" checked>\n        <input type=\"color\" title=\"Cards Bg\" name=\"cardsBg\" value=\"#ffffff\">\n        <select title=\"Cards\" name=\"cardsAmount\">\n            <option value=\"1\">1</option>\n            <option value=\"2\">2</option>\n            <option value=\"3\">3</option>\n            <option value=\"4\" selected>4</option>\n        </select>\n        <select title=\"Align Buttons:\" name=\"alignBtn\" condition=\"showButtons\">\n            <option value=\"1\" selected>Left</option>\n            <option value=\"2\">Center</option>\n            <option value=\"3\">Right</option>\n        </select>\n        <!---->\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Background Image\" value=\"@PROJECT_PATH@/assets/images/background2.jpg\" parallax>\n            <input type=\"color\" title=\"Background Color\" value=\"#ffffff\" selected>\n            <input type=\"video\" title=\"Background Video\" value=\"http://www.youtube.com/watch?v=uNCr7NdOJgw\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#efefef\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.8\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n    <!---->\n    <!--Overlay-->\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n    <!--Container-->\n    <div class=\"container\">\n        <div class=\"row justify-content-center\">\n            <!--Titles-->\n            <div class=\"title pb-5 col-12\">\n                <h2 mbr-if=\"showTitle\" class=\"align-left pb-3 mbr-fonts-style\" mbr-theme-style=\"display-1\">Moviles Basicos</h2>\n                <h3 mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" class=\"mbr-section-subtitle mbr-light mbr-fonts-style\" mbr-theme-style=\"display-5\">THOMSON</h3>\n            </div>\n            <!--Card-1-->\n            <div class=\"card col-12 col-md-6\" mbr-class=\"{'col-lg-3': cardsAmount == '4',\n                             'col-lg-4': cardsAmount == '3', 'last-child': cardsAmount == '1'}\">\n                <div class=\"card-wrapper\">\n                    <div class=\"card-img\">\n                        <img src=\"@PROJECT_PATH@/assets/images/thomson-tlink-11-510x510.jpg\" alt=\"Mobirise\" title>\n                    </div>\n                    <div class=\"card-box\" mbr-class=\"{'pb-md-5': cardsAmount > '2'}\">\n                        <h4 class=\"card-title mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showCardTitle\" data-app-selector=\".card-title\">\n                            Thomson Tlink 11</h4>\n                        <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text\">TAMAÑO DE PANTALLA\t1.77''\n<br>TIPO DE PANTALLA\t128X160 65K COLORES\n<br>REDES\tGSM-EDGE 850/900/1800/1900MHZ\n<br>BLUETOOTH\tSI\n<br>DOBLE SIM\tSI\n<br>COLORES DISPONIBLES\tNEGRO / BLANCO\n<br>EAN\tNEGRO : 3527570047596 BLANCO : 3527570047688\n<br>MEMORIA EXTENSIBLE\tSI</p>\n                        <!--Btn-->\n                        <div mbr-buttons mbr-theme-style=\"display-4\" class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\" mbr-class=\"{'align-left' : alignBtn == 1, 'align-center' : alignBtn == 2, 'align-right' : alignBtn == 3}\"><a href=\"index.html#services1-1\" class=\"btn btn-warning-outline\" data-app-placeholder=\"Type Text\">€ 19,90</a></div>\n                    </div>\n                </div>\n            </div>\n            <!--Card-2-->\n            <div class=\"card col-12 col-md-6\" mbr-if=\"cardsAmount > 1\" mbr-class=\"{'col-lg-3': cardsAmount == '4',\n                             'col-lg-4': cardsAmount == '3', 'last-child': cardsAmount == '2'}\">\n                <div class=\"card-wrapper\">\n                    <div class=\"card-img\">\n                        <img src=\"@PROJECT_PATH@/assets/images/thomson-tlink-40-179x240.jpg\" alt=\"Mobirise\" title>\n                    </div>\n                    <div class=\"card-box\" mbr-class=\"{'pb-md-5': cardsAmount > '2'}\">\n                        <h4 class=\"card-title mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showCardTitle\" data-app-selector=\".card-title\">Thomson Tlink 40</h4>\n                        <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text\">Tamaño de pantalla\t1.8\" / 128x160\n<br>Número de colores\t65k\n<br>Redes\tGSM-EDGE 850/900/1800/1900Mhz\n<br>Tipo de batería\tLi-ion 600mAh\n<br>Autonomía en espera\t264H\n<br>Autonomía en conversación\t3.8H\n<br>Bluetooth\tSi\n<br>APN\t0.3MP\n<br>Cámara frontal\tNo\n<br>Radio FM\tSí\n<br>Mensajería\tSMS MMS\n<br>Almacenamiento contactos\t150 contactos\n<br>Lector Micro SD\tSí\n<br>Dual SIM\tSí\n<br>Lector de video\tNo\n<br>Color\tGris\n<br>Peso neto\t84.6g\n<br>Dimensiones\t176.75 x 46.5 x 17.7 mm</p>\n                        <!--Btn-->\n                        <div mbr-buttons mbr-theme-style=\"display-4\" class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\" mbr-class=\"{'align-left' : alignBtn == 1, 'align-center' : alignBtn == 2, 'align-right' : alignBtn == 3}\"><a href=\"index.html#services1-1\" class=\"btn btn-warning-outline\" data-app-placeholder=\"Type Text\">€ 37,90</a></div>\n                    </div>\n                </div>\n            </div>\n            <!--Card-3-->\n            <div class=\"card col-12 col-md-6\" mbr-if=\"cardsAmount > 2\" mbr-class=\"{'col-lg-3': cardsAmount == '4',\n                             'col-lg-4': cardsAmount == '3', 'last-child': cardsAmount == '3'}\">\n                <div class=\"card-wrapper\">\n                    <div class=\"card-img\">\n                        <img src=\"@PROJECT_PATH@/assets/images/thomson-serea-51-180x239.jpg\" alt=\"Mobirise\" title>\n                    </div>\n                    <div class=\"card-box\">\n                        <h4 class=\"card-title mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showCardTitle\" data-app-selector=\".card-title\">Thomson Serea 51</h4>\n                        <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text\">Aplicaciones incluidasBotón Emergencia SOS\n<br>Audio y video\n<br>Formatos reproductor de músicaMP3\n<br>Otras características audioAltavoz\n<br>RadioFM\n<br>Bateria\n<br>Bateria tipoIon Litio\n<br>Capacidad batería850 Amperios hora\n<br>Tiempo conversación5 horas\n<br>Tiempo espera220 horas</p>\n                        <!--Btn-->\n                        <div mbr-buttons mbr-theme-style=\"display-4\" class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\" mbr-class=\"{'align-left' : alignBtn == 1, 'align-center' : alignBtn == 2, 'align-right' : alignBtn == 3}\"><a href=\"index.html#services1-1\" class=\"btn btn-warning-outline\" data-app-placeholder=\"Type Text\">€ 45,90</a></div>\n                    </div>\n                </div>\n            </div>\n            <!--Card-4-->\n            <div class=\"card col-12 col-md-6\" mbr-if=\"cardsAmount > 3\" mbr-class=\"{'col-lg-3': cardsAmount == '4',\n                             'col-lg-4': cardsAmount == '3', 'last-child': cardsAmount == '4'}\">\n                <div class=\"card-wrapper\">\n                    <div class=\"card-img\">\n                        <img src=\"@PROJECT_PATH@/assets/images/thomson-serea-63-180x239.jpg\" alt=\"Mobirise\" title>\n                    </div>\n                    <div class=\"card-box\">\n                        <h4 class=\"card-title mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showCardTitle\" data-app-selector=\".card-title\">Thomson Serea 63</h4>\n                        <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text\">Aplicaciones incluidas Botón Emergencia SOS\n<br>Audio y video\n<br>Formatos reproductor de músicaMP3\n<br>RadioFM\n<br>Bateria\n<br>Bateria tipoIon Litio\n<br>Capacidad batería900 Amperios hora\n<br>Tiempo conversación5.5 horas\n<br>Tiempo espera384 horas</p>\n                        <!--Btn-->\n                        <div mbr-buttons mbr-theme-style=\"display-4\" class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\" mbr-class=\"{'align-left' : alignBtn == 1, 'align-center' : alignBtn == 2, 'align-right' : alignBtn == 3}\"><a href=\"index.html#services1-1\" class=\"btn btn-warning-outline\" data-app-placeholder=\"Type Text\">€ 59,90</a></div>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_customHTML": "<section class=\"services1\" group=\"Features\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\">\n    <!---->\n    <mbr-parameters>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"9\" step=\"1\" value=\"0\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"9\" step=\"1\" value=\"6\">\n        <!---->\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Subtitle\" name=\"showSubtitle\" checked>\n        <!---->\n        <input type=\"checkbox\" title=\"Show Card Title\" name=\"showCardTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Card Text\" name=\"showText\" checked>\n        <input type=\"checkbox\" title=\"Show Card Buttons\" name=\"showButtons\" checked>\n        <input type=\"color\" title=\"Cards Bg\" name=\"cardsBg\" value=\"#ffffff\">\n        <select title=\"Cards\" name=\"cardsAmount\">\n            <option value=\"1\">1</option>\n            <option value=\"2\">2</option>\n            <option value=\"3\">3</option>\n            <option value=\"4\" selected>4</option>\n        </select>\n        <select title=\"Align Buttons:\" name=\"alignBtn\" condition=\"showButtons\">\n            <option value=\"1\" selected>Left</option>\n            <option value=\"2\">Center</option>\n            <option value=\"3\">Right</option>\n        </select>\n        <!---->\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Background Image\" value=\"@PROJECT_PATH@/assets/images/background2.jpg\" parallax>\n            <input type=\"color\" title=\"Background Color\" value=\"#ffffff\" selected>\n            <input type=\"video\" title=\"Background Video\" value=\"http://www.youtube.com/watch?v=uNCr7NdOJgw\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#efefef\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.8\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n    <!---->\n    <!--Overlay-->\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n    <!--Container-->\n    <div class=\"container\">\n        <div class=\"row justify-content-center\">\n            <!--Titles-->\n            <div class=\"title pb-5 col-12\">\n                <h2 mbr-if=\"showTitle\" class=\"align-left pb-3 mbr-fonts-style\" mbr-theme-style=\"display-1\">Moviles Basicos</h2>\n                <h3 mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" class=\"mbr-section-subtitle mbr-light mbr-fonts-style\" mbr-theme-style=\"display-5\">&nbsp;THOMSON</h3>\n            </div>\n            <!--Card-1-->\n            <div class=\"card col-12 col-md-6\" mbr-class=\"{'col-lg-3': cardsAmount == '4',\n                             'col-lg-4': cardsAmount == '3', 'last-child': cardsAmount == '1'}\">\n                <div class=\"card-wrapper\">\n                    <div class=\"card-img\">\n                        <img src=\"@PROJECT_PATH@/assets/images/thomson-tlink-11-510x510.jpg\" alt=\"Mobirise\" title>\n                    </div>\n                    <div class=\"card-box\" mbr-class=\"{'pb-md-5': cardsAmount > '2'}\">\n                        <h4 class=\"card-title mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showCardTitle\" data-app-selector=\".card-title\">\n                            Thomson Tlink 11</h4>\n                        <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text\">TAMAÑO DE PANTALLA\t1.77''\n<br>TIPO DE PANTALLA\t128X160 65K COLORES\n<br>REDES\tGSM-EDGE 850/900/1800/1900MHZ\n<br>BLUETOOTH\tSI\n<br>DOBLE SIM\tSI\n<br>COLORES DISPONIBLES\tNEGRO / BLANCO\n<br>EAN\tNEGRO : 3527570047596 BLANCO : 3527570047688\n<br>MEMORIA EXTENSIBLE\tSI</p>\n                        <!--Btn-->\n                        <div mbr-buttons mbr-theme-style=\"display-4\" class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\" mbr-class=\"{'align-left' : alignBtn == 1, 'align-center' : alignBtn == 2, 'align-right' : alignBtn == 3}\"><a href=\"index.html#services1-1\" class=\"btn btn-warning-outline\" data-app-placeholder=\"Type Text\">€ 19,90</a></div>\n                    </div>\n                </div>\n            </div>\n            <!--Card-2-->\n            <div class=\"card col-12 col-md-6\" mbr-if=\"cardsAmount > 1\" mbr-class=\"{'col-lg-3': cardsAmount == '4',\n                             'col-lg-4': cardsAmount == '3', 'last-child': cardsAmount == '2'}\">\n                <div class=\"card-wrapper\">\n                    <div class=\"card-img\">\n                        <img src=\"@PROJECT_PATH@/assets/images/thomson-tlink-40-179x240.jpg\" alt=\"Mobirise\" title>\n                    </div>\n                    <div class=\"card-box\" mbr-class=\"{'pb-md-5': cardsAmount > '2'}\">\n                        <h4 class=\"card-title mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showCardTitle\" data-app-selector=\".card-title\">Thomson Tlink 40</h4>\n                        <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text\">Tamaño de pantalla\t1.8\" / 128x160\n<br>Número de colores\t65k\n<br>Redes\tGSM-EDGE 850/900/1800/1900Mhz\n<br>Tipo de batería\tLi-ion 600mAh\n<br>Autonomía en espera\t264H\n<br>Autonomía en conversación\t3.8H\n<br>Bluetooth\tSi\n<br>APN\t0.3MP\n<br>Cámara frontal\tNo\n<br>Radio FM\tSí\n<br>Mensajería\tSMS MMS\n<br>Almacenamiento contactos\t150 contactos\n<br>Lector Micro SD\tSí\n<br>Dual SIM\tSí\n<br>Lector de video\tNo\n<br>Color\tGris\n<br>Peso neto\t84.6g\n<br>Dimensiones\t176.75 x 46.5 x 17.7 mm</p>\n                        <!--Btn-->\n                        <div mbr-buttons mbr-theme-style=\"display-4\" class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\" mbr-class=\"{'align-left' : alignBtn == 1, 'align-center' : alignBtn == 2, 'align-right' : alignBtn == 3}\"><a href=\"index.html#services1-1\" class=\"btn btn-warning-outline\" data-app-placeholder=\"Type Text\">€ 37,90</a></div>\n                    </div>\n                </div>\n            </div>\n            <!--Card-3-->\n            <div class=\"card col-12 col-md-6\" mbr-if=\"cardsAmount > 2\" mbr-class=\"{'col-lg-3': cardsAmount == '4',\n                             'col-lg-4': cardsAmount == '3', 'last-child': cardsAmount == '3'}\">\n                <div class=\"card-wrapper\">\n                    <div class=\"card-img\">\n                        <img src=\"@PROJECT_PATH@/assets/images/thomson-serea-51-180x239.jpg\" alt=\"Mobirise\" title>\n                    </div>\n                    <div class=\"card-box\">\n                        <h4 class=\"card-title mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showCardTitle\" data-app-selector=\".card-title\">Thomson Serea 51</h4>\n                        <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text\">Aplicaciones incluidasBotón Emergencia SOS\n<br>Audio y video\n<br>Formatos reproductor de músicaMP3\n<br>Otras características audioAltavoz\n<br>RadioFM\n<br>Bateria\n<br>Bateria tipoIon Litio\n<br>Capacidad batería850 Amperios hora\n<br>Tiempo conversación5 horas\n<br>Tiempo espera220 horas</p>\n                        <!--Btn-->\n                        <div mbr-buttons mbr-theme-style=\"display-4\" class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\" mbr-class=\"{'align-left' : alignBtn == 1, 'align-center' : alignBtn == 2, 'align-right' : alignBtn == 3}\"><a href=\"index.html#services1-1\" class=\"btn btn-warning-outline\" data-app-placeholder=\"Type Text\">€ 45,90</a></div>\n                    </div>\n                </div>\n            </div>\n            <!--Card-4-->\n            <div class=\"card col-12 col-md-6\" mbr-if=\"cardsAmount > 3\" mbr-class=\"{'col-lg-3': cardsAmount == '4',\n                             'col-lg-4': cardsAmount == '3', 'last-child': cardsAmount == '4'}\">\n                <div class=\"card-wrapper\">\n                    <div class=\"card-img\">\n                        <img src=\"@PROJECT_PATH@/assets/images/thomson-serea-63-180x239.jpg\" alt=\"Mobirise\" title>\n                    </div>\n                    <div class=\"card-box\">\n                        <h4 class=\"card-title mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showCardTitle\" data-app-selector=\".card-title\">Thomson Serea 63</h4>\n                        <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text\">Aplicaciones incluidas Botón Emergencia SOS\n<br>Audio y video\n<br>Formatos reproductor de músicaMP3\n<br>RadioFM\n<br>Bateria\n<br>Bateria tipoIon Litio\n<br>Capacidad batería900 Amperios hora\n<br>Tiempo conversación5.5 horas\n<br>Tiempo espera384 horas</p>\n                        <!--Btn-->\n                        <div mbr-buttons mbr-theme-style=\"display-4\" class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\" mbr-class=\"{'align-left' : alignBtn == 1, 'align-center' : alignBtn == 2, 'align-right' : alignBtn == 3}\"><a href=\"index.html#services1-1\" class=\"btn btn-warning-outline\" data-app-placeholder=\"Type Text\">€ 59,90</a></div>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
           "_anchor": "services1-o",
           "_isUserblock": true,
           "_sourceTheme": "mobirise4",
@@ -2051,7 +2052,8 @@
               }
             },
             ".mbr-section-subtitle": {
-              "color": "#3435c3"
+              "color": "#3435c3",
+              "text-align": "center"
             }
           },
           "_name": "services1",
@@ -2116,7 +2118,8 @@
               }
             },
             ".mbr-section-subtitle": {
-              "color": "#3435c3"
+              "color": "#3435c3",
+              "text-align": "center"
             }
           },
           "_name": "services1",
@@ -2184,7 +2187,8 @@
               "text-align": "left"
             },
             ".mbr-section-subtitle": {
-              "color": "#3435c3"
+              "color": "#3435c3",
+              "text-align": "center"
             }
           },
           "_name": "services1",
@@ -2252,7 +2256,8 @@
               "text-align": "left"
             },
             ".mbr-section-subtitle": {
-              "color": "#3435c3"
+              "color": "#3435c3",
+              "text-align": "center"
             }
           },
           "_name": "services1",
@@ -2320,7 +2325,8 @@
               "text-align": "left"
             },
             ".mbr-section-subtitle": {
-              "color": "#3435c3"
+              "color": "#3435c3",
+              "text-align": "center"
             }
           },
           "_name": "services1",
@@ -2431,7 +2437,7 @@
       "settings": {
         "meta_descr": "Website Generator Description",
         "title": "Smart Phones",
-        "order": 2
+        "order": 1
       },
       "components": [
         {
@@ -2949,7 +2955,8 @@
               }
             },
             ".mbr-section-subtitle": {
-              "color": "#3435c3"
+              "color": "#3435c3",
+              "text-align": "center"
             }
           },
           "_name": "services1",
@@ -3014,7 +3021,8 @@
               }
             },
             ".mbr-section-subtitle": {
-              "color": "#3435c3"
+              "color": "#3435c3",
+              "text-align": "center"
             }
           },
           "_name": "services1",
@@ -3079,7 +3087,8 @@
               }
             },
             ".mbr-section-subtitle": {
-              "color": "#3435c3"
+              "color": "#3435c3",
+              "text-align": "center"
             }
           },
           "_name": "services1",
@@ -3147,7 +3156,8 @@
               "text-align": "left"
             },
             ".mbr-section-subtitle": {
-              "color": "#3435c3"
+              "color": "#3435c3",
+              "text-align": "center"
             }
           },
           "_name": "services1",
@@ -3215,7 +3225,8 @@
               "text-align": "left"
             },
             ".mbr-section-subtitle": {
-              "color": "#3435c3"
+              "color": "#3435c3",
+              "text-align": "center"
             }
           },
           "_name": "services1",
@@ -3326,7 +3337,7 @@
       "settings": {
         "meta_descr": "Website Generator Description",
         "title": "Tablets",
-        "order": 4
+        "order": 3
       },
       "components": [
         {
@@ -3952,7 +3963,7 @@
       "settings": {
         "meta_descr": "Website Generator Description",
         "title": "Fundas de Tablets",
-        "order": 5
+        "order": 4
       },
       "components": [
         {
@@ -4706,7 +4717,7 @@
       "settings": {
         "meta_descr": "Website Generator Description",
         "title": "Telefonia Fija",
-        "order": 6
+        "order": 5
       },
       "components": [
         {
@@ -5394,7 +5405,7 @@
       "settings": {
         "meta_descr": "Website Generator Description",
         "title": "Fundas para Moviles",
-        "order": 7
+        "order": 6
       },
       "components": [
         {
@@ -6086,7 +6097,7 @@
       "settings": {
         "meta_descr": "Website Creator Description",
         "title": "Servicio Tecnico",
-        "order": 1
+        "order": 14
       },
       "components": [
         {
@@ -6648,7 +6659,7 @@
       "settings": {
         "meta_descr": "Website Generator Description",
         "title": "Cargadores",
-        "order": 8
+        "order": 7
       },
       "components": [
         {
@@ -7342,7 +7353,7 @@
       "settings": {
         "meta_descr": "Website Generator Description",
         "title": "Cables Para moviles",
-        "order": 9
+        "order": 8
       },
       "components": [
         {
@@ -8305,7 +8316,7 @@
       "settings": {
         "meta_descr": "Website Generator Description",
         "title": "Otros accesorios moviles",
-        "order": 13
+        "order": 12
       },
       "components": [
         {
@@ -9268,7 +9279,7 @@
       "settings": {
         "meta_descr": "Website Generator Description",
         "title": "Power Banks",
-        "order": 10
+        "order": 9
       },
       "components": [
         {
@@ -10231,7 +10242,7 @@
       "settings": {
         "meta_descr": "Website Generator Description",
         "title": "Selfie",
-        "order": 11
+        "order": 10
       },
       "components": [
         {
@@ -11194,7 +11205,7 @@
       "settings": {
         "meta_descr": "Website Generator Description",
         "title": "Baterias",
-        "order": 12
+        "order": 11
       },
       "components": [
         {
